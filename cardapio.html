@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cardápio - Point dos Caldos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>🍲 Cardápio</h1>
+</header>
+
+<section class="cards">
+
+    <div class="card">
+        <h3>Caldo de Feijão</h3>
+        <p>Caldo cremoso com bacon e temperos</p>
+        <span class="preco" data-preco="12.00">R$ 12,00</span>
+        <button onclick="adicionar('Caldo de Feijão', 12)">Adicionar</button>
+    </div>
+
+    <div class="card">
+        <h3>Caldo Verde</h3>
+        <p>Batata, couve e calabresa</p>
+        <span class="preco" data-preco="14.00">R$ 14,00</span>
+        <button onclick="adicionar('Caldo Verde', 14)">Adicionar</button>
+    </div>
+
+</section>
+
+<h2>Total: R$ <span id="total">0.00</span></h2>
+
+<input type="text" id="cupom" placeholder="Cupom de desconto">
+<button onclick="aplicarCupom()">Aplicar Cupom</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
